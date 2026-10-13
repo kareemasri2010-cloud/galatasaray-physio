@@ -1,0 +1,1047 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Galatasaray 2026/27 periodization plan by the Physio &amp; Performance Department: Kareem, Batuhan, Nicolas and Ali.">
+<meta property="og:title" content="Galatasaray Physio &amp; Performance Department">
+<meta property="og:description" content="2026/27 periodization plan: season, fixture calendar, macrocycle, mesocycle and microcycle.">
+<meta property="og:image" content="https://kareemasri2010-cloud.github.io/galatasaray-physio/img/rams-park.jpg">
+<meta name="theme-color" content="#120607">
+<link rel="icon" type="image/png" href="img/crest.png">
+<style>html{color-scheme:dark}body{margin:0}[hidden]{display:none!important}</style>
+<title>Galatasaray Physio Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=Big+Shoulders+Display:wght@700;800;900&display=swap">
+<style>
+/* Layout: a night-match programme for the club's physio department. The red|yellow "parçalı" shirt split is the recurring motif;
+   the plan zooms Season → Macrocycle → Mesocycle → Microcycle, with the fixture calendar as the centrepiece. Single committed dark look. */
+:root{
+  --ground:#120607;
+  --surface:#1c0a0d;
+  --surface-2:#281014;
+  --rule:#3c1b21;
+  --ink:#f7efe4;
+  --muted:#c9b4ad;
+  --faint:#947b76;
+  --red:#a90432;
+  --red-hi:#e23b5c;
+  --gold:#fdb912;
+  --develop:#3cc477;
+  --maintain:#f2c94c;
+  --hold:#ef5a5f;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"Barlow","Helvetica Neue",Arial,sans-serif;
+  --label:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --gutter:clamp(16px,4vw,48px);
+  --maxw:1180px;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--gold);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+img{max-width:100%;display:block}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.tab{font-variant-numeric:tabular-nums}
+
+/* top bar */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--ground) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.topbar .wrap{display:flex;align-items:center;gap:20px;min-height:58px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;flex:none}
+.brand img{width:26px;height:auto}
+.brand span{font-family:var(--label);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:15px;white-space:nowrap}
+.nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin-left:auto;min-width:0}
+.nav::-webkit-scrollbar{display:none}
+.nav a{font-family:var(--label);font-weight:600;text-transform:uppercase;letter-spacing:.07em;font-size:14px;color:var(--muted);text-decoration:none;padding:8px 10px;white-space:nowrap;border-radius:4px}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.split{height:6px;background:linear-gradient(90deg,var(--gold) 0 50%,var(--red) 50% 100%)}
+
+/* hero */
+.hero{position:relative;isolation:isolate;overflow:hidden;padding-block:clamp(56px,9vw,112px) clamp(40px,6vw,64px)}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;object-position:60% 50%}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(90deg,var(--ground) 0%,color-mix(in srgb,var(--ground) 86%,transparent) 42%,color-mix(in srgb,var(--ground) 30%,transparent) 100%),
+  linear-gradient(0deg,var(--ground) 0%,transparent 45%)}
+.hero-inner{display:grid;gap:28px}
+.eyebrow{font-family:var(--label);font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:14px;color:var(--gold)}
+.title-row{display:flex;align-items:center;gap:clamp(14px,3vw,28px)}
+.crest{width:clamp(64px,10vw,112px);height:auto;flex:none;filter:drop-shadow(0 6px 18px rgba(0,0,0,.45))}
+h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(3.4rem,12vw,8.6rem);line-height:.82;letter-spacing:.005em}
+.h1-sub{display:block;font-size:.34em;font-weight:800;letter-spacing:.04em;color:var(--gold);margin-top:.28em;line-height:1}
+.lede{max-width:60ch;font-size:clamp(1.05rem,1.6vw,1.2rem);color:var(--ink)}
+.disclaimer{font-size:13px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));max-width:860px;border:1px solid var(--rule);background:color-mix(in srgb,var(--surface) 82%,transparent);border-radius:6px;overflow:hidden;margin:0}
+.stats div{padding:14px 16px;border-right:1px solid var(--rule);display:flex;flex-direction:column-reverse;gap:2px;min-width:0}
+.stats div:last-child{border-right:0}
+.stats dt{font-family:var(--label);text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:var(--muted)}
+.stats dd{margin:0;font-family:var(--display);font-weight:800;font-size:2.2rem;line-height:1;color:var(--ink)}
+.stats .total{background:var(--red)}
+.stats .total dt{color:var(--ink)}
+.stats .total dd{color:var(--gold)}
+.hero-credit{position:absolute;right:var(--gutter);bottom:10px;font-size:11px;color:var(--faint)}
+
+/* sections */
+.sec{padding-block:clamp(56px,8vw,96px);border-top:1px solid var(--rule)}
+.sec-head{display:grid;gap:12px;margin-bottom:clamp(28px,4vw,44px)}
+.zoom{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:6px 0;font-family:var(--label);font-weight:600;text-transform:uppercase;letter-spacing:.09em;font-size:13px;color:var(--faint)}
+.zoom li+li::before{content:"›";margin-inline:9px;color:var(--rule)}
+.zoom [aria-current]{color:var(--gold)}
+.zoom .span{color:var(--muted);margin-left:14px;letter-spacing:.04em}
+.zoom .span::before{content:none}
+h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(2.3rem,5vw,3.6rem);line-height:.92;letter-spacing:.01em}
+.intro{max-width:64ch;color:var(--muted)}
+.lead-tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--label);font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.lead-tag b{color:var(--ink);font-weight:700}
+.lead-tag .ini{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--surface-2);border:1px solid var(--rule);color:var(--gold);font-size:12px;font-weight:700;letter-spacing:0}
+h3{font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.07em;font-size:15px;color:var(--gold)}
+figure{margin:0}
+figcaption{font-size:13px;color:var(--faint);margin-top:8px}
+figure img{border-radius:6px;width:100%;object-fit:cover}
+
+/* staff */
+.org{display:grid;gap:18px}
+.person{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:22px;display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-content:start;min-width:0}
+.avatar{grid-row:span 3;width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:900;font-size:1.9rem;color:var(--ground);background:var(--gold)}
+.person .name{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:2rem;line-height:1}
+.person .role{font-family:var(--label);font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:15px;color:var(--gold)}
+.person p{color:var(--muted);font-size:15.5px}
+.person ul{grid-column:1/-1;margin:10px 0 0;padding:12px 0 0;border-top:1px solid var(--rule);list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.person li{font-family:var(--label);font-size:14px;letter-spacing:.04em;padding:3px 10px;border-radius:99px;background:var(--surface-2);color:var(--ink)}
+.person.head{border-color:var(--gold);background:linear-gradient(90deg,color-mix(in srgb,var(--gold) 10%,var(--surface)) 0%,var(--surface) 60%)}
+.person.head .avatar{width:84px;height:84px;font-size:2.5rem;background:linear-gradient(90deg,var(--gold) 0 50%,var(--red) 50% 100%);color:var(--ink);text-shadow:0 1px 3px rgba(0,0,0,.5)}
+.person.head .name{font-size:2.6rem}
+.reports{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;position:relative}
+.reports-label{font-family:var(--label);text-transform:uppercase;letter-spacing:.1em;font-size:13px;color:var(--faint);display:flex;align-items:center;gap:12px}
+.reports-label::before,.reports-label::after{content:"";height:1px;background:var(--rule);flex:1}
+@media (max-width:860px){.reports{grid-template-columns:minmax(0,1fr)}}
+
+/* season */
+.season-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(28px,4vw,56px)}
+@media (max-width:900px){.season-grid{grid-template-columns:minmax(0,1fr)}}
+.cal{list-style:none;margin:0;padding:0;display:grid}
+.cal li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 16px;padding-block:16px;border-bottom:1px solid var(--rule)}
+.cal li:first-child{padding-top:0}
+.cal-name{font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:16px}
+.cal-dates{font-family:var(--label);font-weight:600;color:var(--gold);font-size:16px;text-align:right;font-variant-numeric:tabular-nums}
+.cal p{grid-column:1/-1;color:var(--muted);font-size:15.5px}
+.goals{list-style:none;margin:0 0 28px;padding:0;display:grid;gap:14px}
+.goals li{display:grid;grid-template-columns:92px minmax(0,1fr);gap:12px;align-items:baseline}
+.goals b{font-family:var(--label);text-transform:uppercase;letter-spacing:.08em;font-size:14px;color:var(--gold);font-weight:700}
+.table-scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+.standings{font-size:14.5px}
+.standings caption{text-align:left;font-size:13px;color:var(--faint);caption-side:bottom;padding-top:8px}
+.standings th{font-family:var(--label);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:12.5px;color:var(--faint);text-align:right;padding:6px 6px;border-bottom:1px solid var(--rule)}
+.standings td{text-align:right;padding:5px 6px;border-bottom:1px solid color-mix(in srgb,var(--rule) 60%,transparent);color:var(--muted)}
+.standings th:nth-child(2),.standings td:nth-child(2){text-align:left;width:100%}
+.standings td:first-child{color:var(--faint)}
+.standings td:last-child{color:var(--ink);font-weight:600}
+.standings tr.gs td{background:var(--red);color:var(--ink);font-weight:600;border-bottom-color:var(--red)}
+.standings tr.gs td:last-child{color:var(--gold)}
+.standings tr.releg td:first-child{box-shadow:inset 3px 0 0 var(--hold)}
+.season-fig{margin-top:clamp(28px,4vw,44px)}
+.season-fig img{aspect-ratio:21/8}
+
+/* timeline */
+.cal-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:clamp(24px,4vw,48px);align-items:end;margin-bottom:28px}
+.cal-head figure img{aspect-ratio:16/9}
+@media (max-width:900px){.cal-head{grid-template-columns:minmax(0,1fr)}}
+.legend{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:14px;color:var(--muted);margin-bottom:14px}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.k-dot{width:11px;height:11px;border-radius:50%;background:var(--gold)}
+.k-bar{width:26px;height:8px;border-radius:4px;background:var(--red-hi)}
+.k-win{width:26px;height:14px;border:1.5px dashed var(--muted);border-radius:3px}
+.k-dia{width:10px;height:10px;background:var(--ink);transform:rotate(45deg)}
+.tl{overflow-x:auto;border:1px solid var(--rule);border-radius:8px;background:var(--surface)}
+.tl-inner{display:grid;grid-template-columns:132px minmax(0,1fr);min-width:1240px}
+.tl-names{position:sticky;left:0;z-index:3;background:var(--surface);border-right:1px solid var(--rule)}
+.tl-names div{display:flex;align-items:center;padding-inline:14px;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:13px;color:var(--ink);border-top:1px solid var(--rule)}
+.tl-names div:first-child{border-top:0}
+.tl-plot{position:relative}
+.tl-row{position:relative;border-top:1px solid var(--rule)}
+.tl-row:first-child{border-top:0}
+.h-months{height:40px}.h-phase{height:44px}.h-lane{height:70px}
+.grid-line{position:absolute;top:0;bottom:0;width:1px;background:var(--rule);z-index:0}
+.mon{position:absolute;top:0;height:40px;display:flex;flex-direction:column;justify-content:center;padding-left:8px;font-family:var(--label);font-weight:600;text-transform:uppercase;letter-spacing:.07em;font-size:13px;color:var(--muted);line-height:1.1}
+.mon small{font-size:11px;color:var(--faint);letter-spacing:.04em}
+.ph{position:absolute;top:7px;bottom:7px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:11px;color:var(--ink);overflow:hidden;white-space:nowrap;z-index:1}
+.ph.prep{background:color-mix(in srgb,var(--gold) 30%,var(--surface-2));color:var(--ink)}
+.ph.comp{background:color-mix(in srgb,var(--red) 75%,var(--surface))}
+.ph.peak{background:var(--red-hi)}
+.ph.trans{background:var(--surface-2);color:var(--muted);border:1px solid var(--rule)}
+.ev,.rg,.win,.dia{position:absolute;z-index:1}
+.rg{top:50%;height:8px;transform:translateY(-50%);background:var(--red-hi);border-radius:4px}
+.ev{top:50%;width:12px;height:12px;border-radius:50%;transform:translate(-50%,-50%);background:var(--gold);box-shadow:0 0 0 3px var(--surface)}
+.ev.home{background:var(--gold)}
+.ev.away{background:var(--surface);border:2.5px solid var(--gold)}
+.dia{top:50%;width:11px;height:11px;transform:translate(-50%,-50%) rotate(45deg);background:var(--ink);box-shadow:0 0 0 3px var(--surface)}
+.win{top:50%;height:18px;transform:translateY(-50%);border:1.5px dashed var(--muted);border-radius:3px;min-width:7px;background:color-mix(in srgb,var(--surface-2) 60%,transparent)}
+.win.solid{border:1.5px solid var(--gold);background:color-mix(in srgb,var(--gold) 22%,transparent)}
+.lbl{position:absolute;transform:translateX(-50%);font-family:var(--label);font-weight:600;font-size:11.5px;letter-spacing:.03em;color:var(--ink);white-space:nowrap;z-index:2;line-height:1}
+.lbl.up{bottom:calc(50% + 12px)}
+.lbl.dn{top:calc(50% + 12px)}
+.lbl.muted{color:var(--muted)}
+details.fixtures{margin-top:18px;border:1px solid var(--rule);border-radius:8px;background:var(--surface)}
+details.fixtures summary{cursor:pointer;padding:14px 18px;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.07em;font-size:15px;color:var(--ink)}
+details.fixtures summary::marker{color:var(--gold)}
+.fx{font-size:15px}
+.fx th{font-family:var(--label);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:12.5px;color:var(--faint);text-align:left;padding:8px 18px;border-bottom:1px solid var(--rule)}
+.fx td{padding:8px 18px;border-bottom:1px solid color-mix(in srgb,var(--rule) 60%,transparent);color:var(--muted);vertical-align:top}
+.fx td:first-child{white-space:nowrap;color:var(--ink)}
+.fx tr.month td{background:var(--surface-2);color:var(--gold);font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:13px;padding-block:6px}
+.comp{display:inline-block;font-family:var(--label);font-weight:600;font-size:13px;letter-spacing:.04em;padding:1px 8px;border-radius:99px;white-space:nowrap}
+.comp.lg{background:color-mix(in srgb,var(--red) 70%,var(--surface));color:var(--ink)}
+.comp.ucl{background:color-mix(in srgb,var(--gold) 85%,var(--surface));color:var(--ground)}
+.comp.cup{background:var(--surface-2);color:var(--ink);border:1px solid var(--rule)}
+.comp.sc{background:var(--ink);color:var(--ground)}
+.note{font-size:14px;color:var(--faint);margin-top:12px;max-width:80ch}
+
+/* macrocycle */
+.banner img{aspect-ratio:21/7;object-position:50% 40%}
+.banner{margin-bottom:28px}
+.macro{min-width:860px;font-size:15.5px}
+.macro th{font-family:var(--label);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:13px;color:var(--faint);text-align:left;padding:10px 14px;border-bottom:1px solid var(--rule)}
+.macro td{padding:14px;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--muted)}
+.macro td.meso{font-family:var(--label);font-weight:700;font-size:17px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink);white-space:nowrap}
+.macro td.dates{font-family:var(--label);font-weight:600;color:var(--gold);white-space:nowrap;font-size:16px}
+.macro td.focus{color:var(--ink)}
+.chip{display:inline-block;font-family:var(--label);font-weight:700;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;padding:3px 9px;border-radius:4px;white-space:nowrap}
+.chip.prep{background:color-mix(in srgb,var(--gold) 30%,var(--surface-2));color:var(--ink)}
+.chip.comp{background:color-mix(in srgb,var(--red) 75%,var(--surface));color:var(--ink)}
+.chip.peak{background:var(--red-hi);color:var(--ink)}
+.chip.trans{background:var(--surface-2);color:var(--muted);border:1px solid var(--rule)}
+.macro tr.sel td{background:color-mix(in srgb,var(--red) 16%,transparent)}
+.macro tr.sel td.meso::after{content:"Selected below";display:block;font-size:12px;letter-spacing:.08em;color:var(--gold);margin-top:4px}
+
+/* mesocycle */
+.meso-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px);align-items:start;margin-bottom:36px}
+@media (max-width:900px){.meso-grid{grid-template-columns:minmax(0,1fr)}}
+.meso-grid figure img{aspect-ratio:4/3}
+.block-fx{list-style:none;margin:20px 0 0;padding:0;display:grid}
+.block-fx li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;padding-block:11px;border-bottom:1px solid var(--rule);align-items:baseline}
+.block-fx .d{font-family:var(--label);font-weight:700;color:var(--gold);font-variant-numeric:tabular-nums;font-size:16px}
+.block-fx .if{font-size:13px;color:var(--faint);margin-left:6px}
+.comps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:1000px){.comps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.comps{grid-template-columns:minmax(0,1fr)}}
+.comp-card{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:20px;display:grid;gap:12px;align-content:start;min-width:0}
+.comp-card .cn{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.9rem;line-height:1}
+.status{display:flex;align-items:center;gap:10px;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:14px}
+.status i{width:12px;height:12px;border-radius:50%;flex:none}
+.develop i{background:var(--develop)}.develop{color:var(--develop)}
+.maintain i{background:var(--maintain)}.maintain{color:var(--maintain)}
+.hold i{background:var(--hold)}.hold{color:var(--hold)}
+.meter{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.meter span{height:8px;border-radius:2px;background:var(--surface-2)}
+.develop+.meter span.on{background:var(--develop)}
+.maintain+.meter span.on{background:var(--maintain)}
+.hold+.meter span.on{background:var(--hold)}
+.meter-l{font-family:var(--label);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+.comp-card p{color:var(--muted);font-size:15.5px}
+.justify{margin-top:28px;background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:clamp(20px,3vw,32px);display:grid;gap:10px}
+.justify p{max-width:72ch}
+
+/* microcycle */
+.micro-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,400px);gap:clamp(24px,4vw,48px);align-items:start;margin-bottom:32px}
+@media (max-width:900px){.micro-head{grid-template-columns:minmax(0,1fr)}}
+.micro-head figure img{aspect-ratio:4/3}
+.chart{display:grid;grid-template-columns:70px minmax(0,1fr);gap:0;background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:22px 20px 14px 8px;margin-bottom:28px}
+.axis{position:relative;height:190px}
+.axis span{position:absolute;right:10px;transform:translateY(50%);font-family:var(--label);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);white-space:nowrap}
+.plot{position:relative;height:190px}
+.plot .gl{position:absolute;left:0;right:0;height:1px;background:var(--rule)}
+.bars{position:absolute;inset:0;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:clamp(6px,2vw,20px);align-items:end;padding-inline:4px}
+.bar{background:var(--gold);border-radius:3px 3px 0 0;min-height:3px;position:relative}
+.bar.md{background:var(--red-hi)}
+.bar.off{background:transparent;border-top:2px dashed var(--faint);border-radius:0}
+.xlab{grid-column:2;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:clamp(6px,2vw,20px);padding-inline:4px;margin-top:8px}
+.xlab span{text-align:center;font-family:var(--label);font-weight:600;font-size:13px;letter-spacing:.04em;color:var(--ink);line-height:1.2}
+.xlab small{display:block;color:var(--faint);font-weight:500}
+.days{list-style:none;margin:0;padding:0;display:grid}
+.day{display:grid;grid-template-columns:130px minmax(0,1fr) 150px;gap:8px 24px;padding-block:18px;border-bottom:1px solid var(--rule);align-items:start}
+.day:first-child{border-top:1px solid var(--rule)}
+.day .when{display:grid;gap:2px}
+.day .dn{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.6rem;line-height:1}
+.day .dd{font-family:var(--label);font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.md-tag{justify-self:start;font-family:var(--label);font-weight:700;font-size:13px;letter-spacing:.06em;padding:2px 8px;border-radius:4px;background:var(--surface-2);color:var(--gold);margin-top:4px}
+.day .what b{display:block;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:17px;color:var(--ink);margin-bottom:2px}
+.day .what p{color:var(--muted);font-size:15.5px}
+.day .load{display:grid;gap:6px;justify-items:end;text-align:right}
+.day .load b{font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:14px}
+.pips{display:flex;gap:3px}
+.pips i{width:16px;height:8px;border-radius:2px;background:var(--surface-2)}
+.pips i.on{background:var(--gold)}
+.day.matchday{background:linear-gradient(90deg,color-mix(in srgb,var(--red) 28%,transparent),transparent 70%)}
+.day.matchday .pips i.on{background:var(--red-hi)}
+.day.matchday .md-tag{background:var(--red);color:var(--ink)}
+@media (max-width:760px){
+  .day{grid-template-columns:minmax(0,1fr) auto}
+  .day .what{grid-column:1/-1;grid-row:2}
+  .day .when{grid-template-columns:auto auto;align-items:baseline;gap:4px 10px;justify-content:start}
+  .md-tag{margin-top:0}
+}
+
+/* periodization chart (macrocycle) */
+.legend-load{margin-bottom:16px}
+.legend-load b{color:var(--ink);font-weight:600}
+.sw{width:16px;height:16px;border-radius:4px;flex:none}
+.sw.d{background:var(--develop)}.sw.m{background:var(--maintain)}.sw.h{background:var(--hold)}
+.pchart{min-width:1040px;table-layout:fixed;border-collapse:separate;border-spacing:5px;font-size:14px;margin-left:-5px}
+.pchart thead td,.pchart th[scope=row]{width:108px;position:sticky;left:0;z-index:1;background:var(--ground)}
+.pchart th[scope=row]{text-align:left;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:14px;color:var(--ink);padding:0 8px 0 4px}
+.pchart thead th{background:var(--surface-2);border-radius:6px;padding:10px;text-align:left;vertical-align:top}
+.pchart .mn{display:block;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:15px;line-height:1.15;color:var(--ink)}
+.pchart .mdt{display:block;font-family:var(--label);font-weight:600;font-size:13.5px;color:var(--gold);margin-top:4px;font-variant-numeric:tabular-nums}
+.pchart thead th.sel{background:var(--gold)}
+.pchart thead th.sel .mn,.pchart thead th.sel .mdt{color:var(--ground)}
+.seltag{display:block;margin-top:6px;font-family:var(--label);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ground);font-weight:700}
+.pchart td{border-radius:6px;padding:11px 8px;text-align:center;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:14px;color:var(--ground)}
+.pchart td.d{background:var(--develop)}.pchart td.m{background:var(--maintain)}.pchart td.h{background:var(--hold)}
+.pchart td.p-prep{background:color-mix(in srgb,var(--gold) 30%,var(--surface-2));color:var(--ink)}
+.pchart td.p-comp{background:color-mix(in srgb,var(--red) 75%,var(--surface));color:var(--ink)}
+.pchart td.p-peak{background:var(--red-hi);color:var(--ink)}
+.pchart td.p-trans{background:var(--surface-2);color:var(--muted)}
+.pchart tr.r-text td{background:var(--surface);color:var(--muted);text-transform:none;font-family:var(--body);font-weight:500;letter-spacing:0;text-align:left;font-size:13.5px;line-height:1.35;vertical-align:top}
+.pchart td.sel{box-shadow:0 0 0 2px var(--gold)}
+.macro-fig{margin-top:28px}
+.macro-fig img{aspect-ratio:21/7;object-position:50% 40%}
+
+/* taper (mesocycle) */
+.taper{margin-top:28px;background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:clamp(20px,3vw,28px)}
+.taper-list{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:6px}
+.taper-list li{display:grid;grid-template-columns:70px 120px minmax(0,1fr) 52px minmax(0,1.1fr);grid-template-areas:"w d b p m";gap:14px;align-items:center;padding:9px 10px;border-radius:6px}
+.taper-list li.now{background:color-mix(in srgb,var(--red) 32%,transparent)}
+.tw{grid-area:w;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:14px}
+.tdt{grid-area:d;font-family:var(--label);font-weight:600;color:var(--gold);font-size:15px}
+.tbar{grid-area:b;height:14px;background:var(--surface-2);border-radius:3px;overflow:hidden}
+.tbar i{display:block;height:100%;background:var(--gold)}
+.tp{grid-area:p;font-family:var(--display);font-weight:800;font-size:1.35rem;text-align:right;line-height:1}
+.tm{grid-area:m;color:var(--muted);font-size:14.5px}
+@media (max-width:760px){
+  .taper-list li{grid-template-columns:64px minmax(0,1fr) 48px;grid-template-areas:"w d p" "b b b" "m m m";gap:6px 12px}
+}
+
+/* week board (microcycle) */
+.week{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px}
+.wd{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:14px 12px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.wd-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px}
+.wd-head .dn{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.7rem;line-height:1}
+.wd-head .dd{font-family:var(--label);font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.wd-head .md-tag{margin-top:0}
+.wd-bar{height:120px;background:var(--surface-2);border-radius:4px;display:flex;align-items:flex-end;overflow:hidden}
+.wd-bar i{display:block;width:100%;background:var(--gold)}
+.wd.off .wd-bar{background:repeating-linear-gradient(135deg,var(--surface-2) 0 6px,var(--surface) 6px 12px)}
+.wd-load{font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:14px;color:var(--gold)}
+.wd-s{font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:16px;line-height:1.15;color:var(--ink)}
+.wd-d{font-size:13.5px;color:var(--muted);line-height:1.4}
+.wd.off .wd-load{color:var(--faint)}
+.wd.match{border-color:var(--red-hi);background:color-mix(in srgb,var(--red) 25%,var(--surface))}
+.wd.match .wd-bar i{background:var(--red-hi)}
+.wd.match .md-tag{background:var(--red);color:var(--ink)}
+.wd.match .wd-load{color:var(--ink)}
+@media (max-width:1000px){
+  .week{grid-template-columns:minmax(0,1fr)}
+  .wd{display:grid;grid-template-columns:100px minmax(0,1fr) 44px;grid-template-areas:"h s b" "h d b" "h l b";gap:4px 14px;align-items:start}
+  .wd-head{grid-area:h;flex-direction:column;align-items:flex-start;gap:4px}
+  .wd-s{grid-area:s}.wd-d{grid-area:d}.wd-load{grid-area:l}
+  .wd-bar{grid-area:b;height:100%;min-height:76px}
+}
+
+/* entrance motion */
+.intro-overlay{position:fixed;inset:0;z-index:100;display:grid;place-items:center;overflow:hidden;cursor:pointer;animation:io-done 0s linear 2.25s forwards}
+@keyframes io-done{to{visibility:hidden;pointer-events:none}}
+.io-half{position:absolute;top:0;bottom:0;width:50.5%}
+.io-left{left:0;background:var(--gold);animation:io-left .8s cubic-bezier(.7,0,.2,1) 1.4s forwards}
+.io-right{right:0;background:var(--red);animation:io-right .8s cubic-bezier(.7,0,.2,1) 1.4s forwards}
+@keyframes io-left{to{transform:translateX(-101%)}}
+@keyframes io-right{to{transform:translateX(101%)}}
+.io-band{position:relative;z-index:1;width:100%;background:var(--ground);display:flex;align-items:center;justify-content:center;gap:clamp(14px,3vw,30px);padding:clamp(18px,4vw,34px) 16px;animation:io-band-in .55s cubic-bezier(.2,.8,.2,1) .05s both,io-band-out .38s ease-in 1.25s forwards}
+@keyframes io-band-in{from{clip-path:inset(0 50% 0 50%)}to{clip-path:inset(0 0 0 0)}}
+@keyframes io-band-out{to{clip-path:inset(50% 0 50% 0)}}
+.io-band img{width:clamp(56px,9vw,96px);height:auto;animation:io-pop .65s cubic-bezier(.2,.9,.3,1.35) .3s both}
+.io-word{display:grid;gap:6px}
+.io-word span{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2.4rem,8vw,5.4rem);line-height:.85;color:var(--ink);animation:io-rise .55s ease .45s both}
+.io-word small{font-family:var(--label);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-size:clamp(11px,1.6vw,15px);animation:io-rise .55s ease .6s both}
+@keyframes io-pop{from{opacity:0;transform:scale(.4) rotate(-14deg)}to{opacity:1;transform:none}}
+@keyframes io-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero-inner>*{animation:hero-rise .7s cubic-bezier(.2,.8,.2,1) both}
+.hero-inner>*:nth-child(1){animation-delay:1.75s}
+.hero-inner>*:nth-child(2){animation-delay:1.85s}
+.hero-inner>*:nth-child(3){animation-delay:1.95s}
+.hero-inner>*:nth-child(4){animation-delay:2.05s}
+.hero-inner>*:nth-child(5){animation-delay:2.15s}
+.hero .bg{animation:hero-settle 2.6s cubic-bezier(.2,.7,.2,1) 1.35s both}
+@keyframes hero-rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes hero-settle{from{transform:scale(1.14)}to{transform:none}}
+@media (prefers-reduced-motion:reduce){
+  .intro-overlay{display:none}
+  .hero-inner>*,.hero .bg{animation:none}
+}
+
+/* macrocycle load wave + matches */
+.ln{width:24px;height:3px;border-radius:2px;flex:none}
+.ln.vol{background:var(--gold)}.ln.int{background:var(--red-hi)}
+.pchart th[scope=row] small{display:block;font-weight:500;font-size:11.5px;color:var(--faint);letter-spacing:.04em;margin-top:2px;text-transform:none}
+.pchart tr.r-wave td{background:var(--surface);padding:0;overflow:hidden}
+.wave{display:block;width:100%;height:140px}
+.w-grid{stroke:var(--rule);stroke-width:1;stroke-dasharray:3 4;fill:none}
+.w-col{stroke:var(--rule);stroke-width:1;fill:none}
+.w-area{fill:color-mix(in srgb,var(--gold) 16%,transparent);stroke:none}
+.w-vol{fill:none;stroke:var(--gold);stroke-width:3;stroke-linecap:round}
+.w-int{fill:none;stroke:var(--red-hi);stroke-width:3;stroke-linecap:round}
+.w-dv{fill:var(--gold);stroke:var(--surface);stroke-width:2}
+.w-di{fill:var(--red-hi);stroke:var(--surface);stroke-width:2}
+.pchart tr.r-num td{background:var(--surface);color:var(--ink);font-family:var(--display);font-weight:800;font-size:1.6rem;letter-spacing:.01em;text-transform:none;padding:8px;line-height:1;font-variant-numeric:tabular-nums}
+.pchart tr.r-num td small{display:block;font-family:var(--label);font-weight:600;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+
+/* smooth motion */
+:root{interpolate-size:allow-keywords}
+.nav a{transition:color .25s ease,background-color .25s ease}
+.nav a[aria-current]{color:var(--ground);background:var(--gold)}
+.scroll-progress{position:absolute;left:0;right:0;bottom:-3px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0);pointer-events:none}
+.person,.comp-card,.wd{transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .3s ease,box-shadow .35s ease}
+.taper-list li,.standings td,.fx td{transition:background-color .2s ease}
+.ev,.dia{transition:scale .2s ease}
+details.fixtures::details-content{block-size:0;overflow:hidden;transition:block-size .45s cubic-bezier(.2,.8,.2,1),content-visibility .45s allow-discrete}
+details.fixtures[open]::details-content{block-size:auto}
+@media (hover:hover){
+  .person:hover,.comp-card:hover,.wd:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--gold) 55%,var(--rule));box-shadow:0 16px 32px -20px rgba(0,0,0,.9)}
+  .taper-list li:not(.now):hover{background:var(--surface-2)}
+  .standings tbody tr:not(.gs):hover td,.fx tbody tr:not(.month):hover td{background:var(--surface-2)}
+  .ev:hover,.dia:hover{scale:1.45}
+}
+@supports (animation-timeline: scroll()){
+  .scroll-progress{animation:prog linear both;animation-timeline:scroll(root)}
+}
+@keyframes prog{to{transform:scaleX(1)}}
+@supports (animation-timeline: view()){
+  @media (prefers-reduced-motion:no-preference){
+    .rv{animation:rv-in linear both;animation-timeline:view();animation-range:entry calc(var(--i,0) * 4%) cover calc(26% + var(--i,0) * 4%)}
+    .taper{view-timeline-name:--taper}
+    .tbar i{transform-origin:0 50%;animation:grow-x linear both;animation-timeline:--taper;animation-range:entry 30% cover 55%}
+    .week{view-timeline-name:--week}
+    .wd-bar i{transform-origin:50% 100%;animation:grow-y linear both;animation-timeline:--week;animation-range:entry 20% cover 48%}
+    .pchart-wrap{view-timeline-name:--macro}
+    .pchart tbody td{animation:cell-in linear both;animation-timeline:--macro;animation-range:entry 5% cover 35%}
+    .w-vol,.w-int{stroke-dasharray:1;animation:draw linear both;animation-timeline:--macro;animation-range:entry 25% cover 55%}
+    .w-area,.w-dv,.w-di{animation:fade-in linear both;animation-timeline:--macro;animation-range:entry 45% cover 60%}
+    .tl{view-timeline-name:--tl}
+    .tl-plot .rg,.tl-plot .ph{animation:wipe linear both;animation-timeline:--tl;animation-range:entry 15% cover 45%}
+    .tl-plot .ev,.tl-plot .dia,.tl-plot .win,.tl-plot .lbl{animation:fade-in linear both;animation-timeline:--tl;animation-range:entry 30% cover 50%}
+  }
+}
+@keyframes rv-in{from{opacity:.15;translate:0 40px;scale:.985}to{opacity:1;translate:none;scale:none}}
+@keyframes grow-x{from{transform:scaleX(0)}to{transform:none}}
+@keyframes grow-y{from{transform:scaleY(0)}to{transform:none}}
+@keyframes cell-in{from{opacity:.15;scale:.9}to{opacity:1;scale:none}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes fade-in{from{opacity:0}to{opacity:1}}
+@keyframes wipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .person,.comp-card,.wd,.nav a{transition:none}
+  details.fixtures::details-content{transition:none}
+}
+
+/* our picks */
+.picks{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:0 0 32px}
+.micro-head .picks{margin:16px 0 0}
+.pick{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.pick.main{background:var(--gold);border-color:var(--gold)}
+.pk-l{font-family:var(--label);font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:var(--muted)}
+.pick.main .pk-l{color:var(--ground)}
+.pk-v{font-family:var(--display);font-weight:800;font-size:2.2rem;line-height:1;color:var(--ink);text-transform:uppercase;font-variant-numeric:tabular-nums}
+.pick.main .pk-v{color:var(--ground)}
+.pk-v small{font-size:.5em;color:var(--muted);font-weight:700;letter-spacing:.04em}
+
+.flag{display:inline-block;width:32px;height:21px;margin-left:8px;vertical-align:-1px;border-radius:2px;box-shadow:0 0 0 1px color-mix(in srgb,var(--ink) 18%,transparent)}
+
+/* footer */
+footer{border-top:1px solid var(--rule);padding-block:48px 64px;background:var(--surface)}
+.foot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}
+@media (max-width:800px){.foot-grid{grid-template-columns:minmax(0,1fr)}}
+footer ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:14.5px;display:grid;gap:6px}
+footer .disc{margin-top:36px;padding-top:20px;border-top:1px solid var(--rule);font-size:13.5px;color:var(--faint);display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<div class="intro-overlay" aria-hidden="true" onclick="this.remove()">
+  <div class="io-half io-left"></div><div class="io-half io-right"></div>
+  <div class="io-band"><img src="img/crest.png" alt=""><div class="io-word"><span>Galatasaray</span><small>Physio &amp; Performance Department</small></div></div>
+</div>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="img/crest.png" alt=""><span>GS Physio Dept</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#staff">Staff</a>
+      <a href="#season">Season</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#macrocycle">Macrocycle</a>
+      <a href="#mesocycle">Mesocycle</a>
+      <a href="#microcycle">Microcycle</a>
+    </nav>
+  </div>
+  <div class="split" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <img class="bg" src="img/rams-park.jpg" alt="">
+  <div class="wrap hero-inner">
+    <p class="eyebrow">PE periodization project · 2026/27 season</p>
+    <div class="title-row">
+      <img class="crest" src="img/crest.png" alt="Galatasaray crest">
+      <h1>Galatasaray<span class="h1-sub">Physio &amp; Performance Department</span></h1>
+    </div>
+    <p class="lede">Our department's training plan for the reigning Süper Lig champions, built around the real 2026/27 fixture list. It runs from the first pre-season session on 7 July 2026 to the Champions League final on 5 June 2027.</p>
+    <dl class="stats">
+      <div><dt>Süper Lig</dt><dd class="tab">34</dd></div>
+      <div><dt>Champions League</dt><dd class="tab">8–17</dd></div>
+      <div><dt>Turkish Cup</dt><dd class="tab">1–6</dd></div>
+      <div><dt>Super Cup</dt><dd class="tab">1–2</dd></div>
+      <div class="total"><dt>Matches to plan for</dt><dd class="tab">44–59</dd></div>
+    </dl>
+  </div>
+  <p class="hero-credit">RAMS Park, Istanbul · Photo: beIN SPORTS Türkiye, CC BY 3.0</p>
+</section>
+
+<!-- STAFF -->
+<section class="sec" id="staff">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="flag-tr" viewBox="0 0 30 20"><rect width="30" height="20" fill="#e30a17"/><circle cx="10" cy="10" r="5" fill="#fff"/><circle cx="11.25" cy="10" r="4" fill="#e30a17"/><polygon fill="#fff" points="13.917,10.000 15.644,9.439 15.644,7.622 16.712,9.092 18.439,8.531 17.372,10.000 18.439,11.469 16.712,10.908 15.644,12.378 15.644,10.561"/></symbol></svg>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">The department</p>
+      <h2>Who's who</h2>
+      <p class="intro">Four people share the season. The head of department signs off the plan; each specialist owns one part of it.</p>
+    </div>
+    <div class="org">
+      <article class="person head">
+        <div class="avatar" aria-hidden="true">K</div>
+        <h3 class="name">Kareem</h3>
+        <p class="role">Head of Department</p>
+        <p>Leads the physio and performance staff. Builds the season macrocycle with the head coach, sets the team goals, and signs off every change to training load.</p>
+        <ul aria-label="Responsible for">
+          <li>Season plan &amp; goals</li><li>Macrocycle</li><li>Final sign-off</li>
+        </ul>
+      </article>
+      <p class="reports-label">Reports to the Head of Department</p>
+      <div class="reports">
+        <article class="person">
+          <div class="avatar" aria-hidden="true">B</div>
+          <h3 class="name">Batuhan <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="Turkey"><use href="#flag-tr"/></svg></h3>
+          <p class="role">Head Physiotherapist</p>
+          <p>Runs recovery days, injury screening and return-to-play. Keeps injury risk low through the winter fixture pile-up.</p>
+          <ul aria-label="Responsible for">
+            <li>MD+1 recovery</li><li>Injury prevention</li><li>Rehab</li>
+          </ul>
+        </article>
+        <article class="person">
+          <div class="avatar" aria-hidden="true">N</div>
+          <h3 class="name">Nicolas</h3>
+          <p class="role">Strength &amp; Conditioning Coach</p>
+          <p>Plans the speed, strength and endurance loads for each block, including the May taper.</p>
+          <ul aria-label="Responsible for">
+            <li>Mesocycle loads</li><li>Gym &amp; speed work</li><li>Tapering</li>
+          </ul>
+        </article>
+        <article class="person">
+          <div class="avatar" aria-hidden="true">A</div>
+          <h3 class="name">Ali <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="Turkey"><use href="#flag-tr"/></svg></h3>
+          <p class="role">Sports Scientist</p>
+          <p>Tracks the fixture calendar, GPS and wellness data, and flags players whose weekly load is too high.</p>
+          <ul aria-label="Responsible for">
+            <li>Fixture calendar</li><li>Load monitoring</li><li>Microcycle data</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEASON -->
+<section class="sec" id="season">
+  <div class="wrap">
+    <div class="sec-head">
+      <ol class="zoom" aria-label="Planning level">
+        <li aria-current="step">Season</li><li>Macrocycle</li><li>Mesocycle</li><li>Microcycle</li>
+        <li class="span tab">7 Jul 2026 – 5 Jun 2027</li>
+      </ol>
+      <h2>Season overview &amp; team goals</h2>
+      <p class="lead-tag"><span class="ini">K</span>Lead: <b>Kareem</b></p>
+    </div>
+    <div class="season-grid">
+      <div>
+        <h3 style="margin-bottom:16px">Season calendar</h3>
+        <ul class="cal">
+          <li><span class="cal-name">Pre-season</span><span class="cal-dates">7 Jul – 13 Aug 2026</span>
+            <p>Training starts on 7 July at the Kemerburgaz Metin Oktay facilities, followed by a camp in Austria. Friendlies against Ümraniyespor, Monza, Venezia, Rennes and Villarreal.</p></li>
+          <li><span class="cal-name">Trendyol Süper Lig</span><span class="cal-dates">14 Aug 2026 – 23 May 2027</span>
+            <p>34 rounds against 17 opponents. Our last league game of 2026 is on 19 December; the league restarts on 15–18 January.</p></li>
+          <li><span class="cal-name">UEFA Champions League</span><span class="cal-dates">9 Sep 2026 – 5 Jun 2027</span>
+            <p>Eight league-phase matches on Tuesday and Wednesday nights until 27 January. Knockout rounds run from February to May, and the final is on 5 June in Madrid.</p></li>
+          <li><span class="cal-name">Turkish Super Cup</span><span class="cal-dates">4/5 &amp; 9 Jan 2027</span>
+            <p>Semi-final against Konyaspor on 4 or 5 January, then the final on 9 January.</p></li>
+          <li><span class="cal-name">Ziraat Turkish Cup</span><span class="cal-dates">Dec 2026 – 29 May 2027</span>
+            <p>We enter in Round 5 (15–24 December). Every tie is a single match except the two-legged semi-final. The final is on 29 May.</p></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="margin-bottom:16px">Team season goals</h3>
+        <ul class="goals">
+          <li><b>League</b><span>Win the Süper Lig again and defend the 2025/26 title.</span></li>
+          <li><b>Europe</b><span>Finish in the top 24 of the Champions League league phase to reach the knockout rounds. A top-8 finish skips the play-off round.</span></li>
+          <li><b>Squad health</b><span>Get through the winter fixture congestion while keeping player injury risk low.</span></li>
+        </ul>
+        <h3 style="margin-bottom:10px">Süper Lig table</h3>
+        <div class="table-scroll">
+          <table class="standings">
+            <caption>After Week 7, updated 12 October 2026. Bottom three are relegated.</caption>
+            <thead><tr><th scope="col">#</th><th scope="col">Club</th><th scope="col">P</th><th scope="col">W</th><th scope="col">D</th><th scope="col">L</th><th scope="col">GD</th><th scope="col">Pts</th></tr></thead>
+            <tbody id="standings"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <figure class="season-fig">
+      <img src="img/fans.jpg" alt="Galatasaray fans holding flares and banners in a city square">
+      <figcaption>Galatasaray fans celebrating a league title. Photo: Frankie Fouganthin, CC BY 4.0</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- CALENDAR -->
+<section class="sec" id="calendar">
+  <div class="wrap">
+    <div class="cal-head">
+      <div class="sec-head" style="margin-bottom:0">
+        <ol class="zoom" aria-label="Planning level">
+          <li aria-current="step">Season</li><li>Macrocycle</li><li>Mesocycle</li><li>Microcycle</li>
+          <li class="span tab">Jul 2026 – Jun 2027</li>
+        </ol>
+        <h2>Fixture calendar</h2>
+        <p class="intro">Every competition on one calendar, checked against the published 2026/27 schedules. The top band shows the macrocycle phases. Champions League knockout rounds and later cup rounds only happen if we keep winning, so they are drawn as windows.</p>
+        <p class="lead-tag"><span class="ini">A</span>Lead: <b>Ali</b></p>
+      </div>
+      <figure>
+        <img src="img/ucl.jpg" alt="Floodlit Champions League match at a packed Parc des Princes">
+        <figcaption>Galatasaray at Paris Saint-Germain's Parc des Princes. We go back there for league-phase matchday 8 on 27 January 2027. Photo: Zakarie Faibis, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <div class="legend" aria-hidden="true">
+      <span><i class="k-dot"></i>Home match</span>
+      <span><i class="k-dot" style="background:var(--surface);border:2.5px solid var(--gold)"></i>Away match</span>
+      <span><i class="k-bar"></i>League rounds</span>
+      <span><i class="k-dia"></i>Istanbul derby</span>
+      <span><i class="k-win"></i>Round window, if we qualify</span>
+    </div>
+    <div class="tl" tabindex="0" aria-label="Season fixture timeline, scrolls sideways">
+      <div class="tl-inner">
+        <div class="tl-names">
+          <div class="h-months"></div>
+          <div class="h-phase">Phase</div>
+          <div class="h-lane">Süper Lig</div>
+          <div class="h-lane">Champions League</div>
+          <div class="h-lane">Turkish Cup</div>
+          <div class="h-lane">Super Cup</div>
+        </div>
+        <div class="tl-plot" id="plot">
+          <div class="tl-row h-months" id="r-months"></div>
+          <div class="tl-row h-phase" id="r-phase"></div>
+          <div class="tl-row h-lane" id="r-league"></div>
+          <div class="tl-row h-lane" id="r-ucl"></div>
+          <div class="tl-row h-lane" id="r-cup"></div>
+          <div class="tl-row h-lane" id="r-sc"></div>
+        </div>
+      </div>
+    </div>
+    <details class="fixtures">
+      <summary>Full fixture list</summary>
+      <div class="table-scroll">
+        <table class="fx">
+          <thead><tr><th scope="col">Date</th><th scope="col">Competition</th><th scope="col">Match</th><th scope="col">Venue</th></tr></thead>
+          <tbody id="fx"></tbody>
+        </table>
+      </div>
+    </details>
+    <p class="note">League dates for Weeks 17–33 (January to May) are set later by the Turkish Football Federation and can move for TV and European games. All dates checked in October 2026.</p>
+  </div>
+</section>
+
+<!-- MACROCYCLE -->
+<section class="sec" id="macrocycle">
+  <div class="wrap">
+    <div class="sec-head">
+      <ol class="zoom" aria-label="Planning level">
+        <li>Season</li><li aria-current="step">Macrocycle</li><li>Mesocycle</li><li>Microcycle</li>
+        <li class="span tab">One year · 7 mesocycles</li>
+      </ol>
+      <h2>Macrocycle chart</h2>
+      <p class="intro">The whole year on one chart. Each column is a mesocycle. Each colour shows how hard we train that quality during the block.</p>
+      <p class="lead-tag"><span class="ini">K</span>Lead: <b>Kareem</b></p>
+    </div>
+    <div class="legend legend-load">
+      <span><i class="sw d"></i><b>Develop</b> · high load</span>
+      <span><i class="sw m"></i><b>Maintain</b> · medium load</span>
+      <span><i class="sw h"></i><b>Hold</b> · low load</span>
+      <span><i class="ln vol"></i><b>Volume</b> · how much we train</span>
+      <span><i class="ln int"></i><b>Intensity</b> · how hard we train</span>
+    </div>
+    <div class="table-scroll pchart-wrap" tabindex="0" aria-label="Macrocycle chart, scrolls sideways on small screens">
+      <table class="pchart">
+        <thead><tr>
+          <td></td>
+          <th scope="col"><span class="mn">Pre-season</span><span class="mdt">7 Jul – 13 Aug</span></th>
+          <th scope="col"><span class="mn">Early season</span><span class="mdt">14 Aug – 31 Oct</span></th>
+          <th scope="col"><span class="mn">Winter congestion</span><span class="mdt">1 Nov – 19 Dec</span></th>
+          <th scope="col"><span class="mn">Mini-break &amp; reload</span><span class="mdt">20 Dec – 3 Jan</span></th>
+          <th scope="col"><span class="mn">Championship push</span><span class="mdt">4 Jan – 30 Apr</span></th>
+          <th scope="col" class="sel"><span class="mn">Tapering &amp; finals</span><span class="mdt">1 May – 5 Jun</span><span class="seltag">Our selected mesocycle</span></th>
+          <th scope="col"><span class="mn">Off-season</span><span class="mdt">6 Jun – early Jul</span></th>
+        </tr></thead>
+        <tbody>
+          <tr><th scope="row">Phase</th><td class="p-prep">Preparatory</td><td class="p-comp">Competitive</td><td class="p-comp">Competitive</td><td class="p-prep">Preparatory</td><td class="p-comp">Competitive</td><td class="p-peak sel">Competitive · peak</td><td class="p-trans">Transition</td></tr>
+          <tr class="r-wave"><th scope="row">Load<small>Volume &amp; intensity</small></th><td colspan="7"><svg class="wave" id="wave" role="img" aria-label="Training load across the year. Volume is highest in pre-season, drops through the season, rises in the reload, then falls in the taper. Intensity climbs to its peak in the championship push and stays high in the taper."></svg></td></tr>
+          <tr><th scope="row">Speed</th><td class="m">Maintain</td><td class="d">Develop</td><td class="m">Maintain</td><td class="m">Maintain</td><td class="m">Maintain</td><td class="m sel">Maintain</td><td class="h">Hold</td></tr>
+          <tr><th scope="row">Endurance</th><td class="d">Develop</td><td class="m">Maintain</td><td class="m">Maintain</td><td class="d">Develop</td><td class="m">Maintain</td><td class="h sel">Hold</td><td class="h">Hold</td></tr>
+          <tr><th scope="row">Strength</th><td class="d">Develop</td><td class="m">Maintain</td><td class="m">Maintain</td><td class="d">Develop</td><td class="m">Maintain</td><td class="h sel">Hold</td><td class="h">Hold</td></tr>
+          <tr><th scope="row">Skills</th><td class="m">Maintain</td><td class="d">Develop</td><td class="m">Maintain</td><td class="d">Develop</td><td class="d">Develop</td><td class="d sel">Develop</td><td class="h">Hold</td></tr>
+          <tr class="r-num"><th scope="row">Matches<small>Competitive</small></th><td>5<small>friendlies</small></td><td>13</td><td>9–10</td><td>0–1</td><td>≈17–29</td><td class="sel">≈4–7</td><td>0</td></tr>
+          <tr class="r-text"><th scope="row">Focus</th><td>Aerobic base, strength, tactical introduction</td><td>Speed, team cohesion, two games a week</td><td>Keep fitness, active recovery</td><td>Short general prep, skill refinement</td><td>High-intensity tactics, keep peak fitness</td><td class="sel">Cut load, stay sharp for the finals</td><td>Active rest</td></tr>
+          <tr class="r-text"><th scope="row">Big games</th><td>Friendlies: Monza, Venezia, Rennes, Villarreal</td><td>Barcelona (UCL), Fenerbahçe derby 26 Oct</td><td>Aston Villa (UCL), Beşiktaş derby 30 Nov</td><td>League winter break</td><td>Super Cup, PSG (UCL), UCL knockouts</td><td class="sel">League ends 23 May, Cup final 29 May</td><td>No matches</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Matches are competitive games in each block. Ranges depend on how far we go in the cups and in Europe, and league dates from January are set later by the TFF. Volume and intensity are our planned levels, not measured data.</p>
+    <figure class="macro-fig">
+      <img src="img/tifo.jpg" alt="Red and yellow tifo covering a full stand at the old Ali Sami Yen stadium">
+      <figcaption>A red-and-yellow tifo at the old Ali Sami Yen stadium, May 2008. Photo: Qwl, public domain</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- MESOCYCLE -->
+<section class="sec" id="mesocycle">
+  <div class="wrap">
+    <div class="sec-head">
+      <ol class="zoom" aria-label="Planning level">
+        <li>Season</li><li>Macrocycle</li><li aria-current="step">Mesocycle</li><li>Microcycle</li>
+        <li class="span tab">1 May – 5 Jun 2027 · 5 weeks</li>
+      </ol>
+      <h2>Mesocycle selection: tapering &amp; finals</h2>
+      <p class="lead-tag"><span class="ini">N</span>Lead: <b>Nicolas</b></p>
+    </div>
+    <div class="picks">
+      <div class="pick main"><span class="pk-l">Month we picked</span><span class="pk-v">May 2027</span></div>
+      <div class="pick"><span class="pk-l">Season month</span><span class="pk-v">11 <small>of 12</small></span></div>
+      <div class="pick"><span class="pk-l">Süper Lig weeks</span><span class="pk-v">31–34 <small>of 34</small></span></div>
+      <div class="pick"><span class="pk-l">Length</span><span class="pk-v">5 <small>weeks</small></span></div>
+    </div>
+    <div class="meso-grid">
+      <div>
+        <p class="intro">May decides the season. We reduce training load step by step so players arrive at the last league games and the finals fresh, while keeping them sharp.</p>
+        <ul class="block-fx">
+          <li><span class="d tab">4/5 May</span><span>Champions League semi-final, second leg<span class="if">if we qualify</span></span></li>
+          <li><span class="d tab">23 May</span><span>Süper Lig final round, home to Gaziantep FK</span></li>
+          <li><span class="d tab">29 May</span><span>Ziraat Turkish Cup final<span class="if">if we qualify</span></span></li>
+          <li><span class="d tab">5 Jun</span><span>Champions League final, Madrid<span class="if">if we qualify</span></span></li>
+        </ul>
+      </div>
+      <figure>
+        <img src="img/fireworks.jpg" alt="Fireworks and light beams over the pitch inside the stadium">
+        <figcaption>Opening night at the stadium now called RAMS Park, January 2011. Photo: Qwl, CC0</figcaption>
+      </figure>
+    </div>
+    <div class="comps">
+      <article class="comp-card">
+        <h3 class="cn" style="color:var(--ink)">Speed</h3>
+        <p class="status maintain"><i></i>Maintain</p>
+        <div class="meter" aria-hidden="true"><span class="on"></span><span class="on"></span><span></span></div>
+        <p class="meter-l">Medium load · yellow</p>
+        <p>Keep neuromuscular sharpness high without overtaxing the central nervous system.</p>
+      </article>
+      <article class="comp-card">
+        <h3 class="cn" style="color:var(--ink)">Endurance</h3>
+        <p class="status hold"><i></i>Hold</p>
+        <div class="meter" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+        <p class="meter-l">Low load · red</p>
+        <p>Save energy for the remaining fixtures and keep everyone in the best possible form.</p>
+      </article>
+      <article class="comp-card">
+        <h3 class="cn" style="color:var(--ink)">Strength</h3>
+        <p class="status hold"><i></i>Hold</p>
+        <div class="meter" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+        <p class="meter-l">Low load · red</p>
+        <p>Prevent muscular fatigue during the final, most important matches of the season.</p>
+      </article>
+      <article class="comp-card">
+        <h3 class="cn" style="color:var(--ink)">Skills</h3>
+        <p class="status develop"><i></i>Develop</p>
+        <div class="meter" aria-hidden="true"><span class="on"></span><span class="on"></span><span class="on"></span></div>
+        <p class="meter-l">High load · green</p>
+        <p>Focus heavily on strategy, tactics and set-piece execution for specific opponents.</p>
+      </article>
+    </div>
+    <div class="taper">
+      <h3>Week by week: how the load drops</h3>
+      <ol class="taper-list">
+        <li><span class="tw">Week 1</span><span class="tdt tab">1–9 May</span><span class="tbar" aria-hidden="true"><i style="width:90%"></i></span><span class="tp tab">90%</span><span class="tm">League round · UCL semi-final, 2nd leg*</span></li>
+        <li><span class="tw">Week 2</span><span class="tdt tab">10–16 May</span><span class="tbar" aria-hidden="true"><i style="width:80%"></i></span><span class="tp tab">80%</span><span class="tm">League round</span></li>
+        <li class="now"><span class="tw">Week 3</span><span class="tdt tab">17–23 May</span><span class="tbar" aria-hidden="true"><i style="width:70%"></i></span><span class="tp tab">70%</span><span class="tm">League final round, Sun 23 May · <a href="#microcycle">see the week plan</a></span></li>
+        <li><span class="tw">Week 4</span><span class="tdt tab">24–30 May</span><span class="tbar" aria-hidden="true"><i style="width:60%"></i></span><span class="tp tab">60%</span><span class="tm">Turkish Cup final, Sat 29 May*</span></li>
+        <li><span class="tw">Week 5</span><span class="tdt tab">31 May – 5 Jun</span><span class="tbar" aria-hidden="true"><i style="width:50%"></i></span><span class="tp tab">50%</span><span class="tm">Champions League final, Sat 5 Jun*</span></li>
+      </ol>
+      <p class="note">Training volume compared with a normal in-season week. Intensity stays high so players stay sharp. * if we qualify</p>
+    </div>
+    <div class="justify">
+      <h3>Justification</h3>
+      <p>The main goal of this final mesocycle is tapering: a progressive reduction of training load that lowers physical and mental stress to maximize performance after an intense training period. By holding endurance and strength (red) and only maintaining speed (yellow), the team saves energy for the final league rounds and the Turkish Cup final on 29 May.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MICROCYCLE -->
+<section class="sec" id="microcycle">
+  <div class="wrap">
+    <div class="micro-head">
+      <div class="sec-head" style="margin-bottom:0">
+        <ol class="zoom" aria-label="Planning level">
+          <li>Season</li><li>Macrocycle</li><li>Mesocycle</li><li aria-current="step">Microcycle</li>
+          <li class="span tab">17–23 May 2027 · 7 days</li>
+        </ol>
+        <h2>Microcycle week plan</h2>
+        <p class="intro">One week from the taper block, building up to the last Süper Lig round on Sunday 23 May. MD means matchday; MD+1 is the day after the previous game and MD−4 is four days before the next one.</p>
+        <p class="lead-tag"><span class="ini">B</span>Lead: <b>Batuhan</b> &amp; <span class="ini">A</span><b>Ali</b></p>
+        <div class="picks">
+          <div class="pick main"><span class="pk-l">Week we picked</span><span class="pk-v">17–23 May</span></div>
+          <div class="pick"><span class="pk-l">Süper Lig week</span><span class="pk-v">34 <small>of 34</small></span></div>
+          <div class="pick"><span class="pk-l">Taper week</span><span class="pk-v">3 <small>of 5</small></span></div>
+        </div>
+      </div>
+      <figure>
+        <img src="img/florya.jpg" alt="Training pitch and clubhouse at the Florya Metin Oktay facility on a sunny day">
+        <figcaption>The Florya Metin Oktay training ground. Photo: heineken14, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+
+    <ol class="week">
+      <li class="wd"><div class="wd-head"><span class="dn">Mon</span><span class="dd">17 May</span><span class="md-tag">MD+1</span></div><div class="wd-bar" aria-hidden="true"><i style="height:20%"></i></div><p class="wd-load">Low</p><p class="wd-s">Recovery</p><p class="wd-d">Light cycling, stretching and physio for the starters. Subs play small-sided games to keep fit.</p></li>
+      <li class="wd off"><div class="wd-head"><span class="dn">Tue</span><span class="dd">18 May</span><span class="md-tag">MD+2</span></div><div class="wd-bar" aria-hidden="true"></div><p class="wd-load">Off</p><p class="wd-s">Rest</p><p class="wd-d">Full day off for body and mind, to prevent overtraining.</p></li>
+      <li class="wd"><div class="wd-head"><span class="dn">Wed</span><span class="dd">19 May</span><span class="md-tag">MD−4</span></div><div class="wd-bar" aria-hidden="true"><i style="height:80%"></i></div><p class="wd-load">High</p><p class="wd-s">Strength &amp; conditioning</p><p class="wd-d">High-intensity interval runs, resistance training and possession drills in tight spaces.</p></li>
+      <li class="wd"><div class="wd-head"><span class="dn">Thu</span><span class="dd">20 May</span><span class="md-tag">MD−3</span></div><div class="wd-bar" aria-hidden="true"><i style="height:60%"></i></div><p class="wd-load">Medium</p><p class="wd-s">Tactical development</p><p class="wd-d">11v11 phase of play on defensive shape and attacking transitions.</p></li>
+      <li class="wd"><div class="wd-head"><span class="dn">Fri</span><span class="dd">21 May</span><span class="md-tag">MD−2</span></div><div class="wd-bar" aria-hidden="true"><i style="height:40%"></i></div><p class="wd-load">Low–Medium</p><p class="wd-s">Speed &amp; skills</p><p class="wd-d">Short sprint reps, agility ladder work and finishing drills.</p></li>
+      <li class="wd"><div class="wd-head"><span class="dn">Sat</span><span class="dd">22 May</span><span class="md-tag">MD−1</span></div><div class="wd-bar" aria-hidden="true"><i style="height:20%"></i></div><p class="wd-load">Low</p><p class="wd-s">Activation &amp; strategy</p><p class="wd-d">Set-piece walkthrough (corners, free kicks), reaction games and light dynamic stretching.</p></li>
+      <li class="wd match"><div class="wd-head"><span class="dn">Sun</span><span class="dd">23 May</span><span class="md-tag">MD</span></div><div class="wd-bar" aria-hidden="true"><i style="height:100%"></i></div><p class="wd-load">Maximum</p><p class="wd-s">Matchday</p><p class="wd-d">Süper Lig final round: Galatasaray v Gaziantep FK at RAMS Park.</p></li>
+    </ol>
+  </div>
+</section>
+</main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Fixture &amp; table sources</h3>
+        <ul>
+          <li><a href="https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/" target="_blank" rel="noopener">UEFA: 2026/27 Champions League league-phase fixtures</a></li>
+          <li><a href="https://www.uefa.com/uefachampionsleague/news/02a6-20d57cfcd03e-407c22a7f465-1000/" target="_blank" rel="noopener">UEFA: 2026/27 dates, draws and final</a></li>
+          <li><a href="https://beinsports.com.tr/haber/trendyol-super-ligde-2026-27-sezonu-programi-belli-oldu" target="_blank" rel="noopener">beIN SPORTS: Süper Lig 2026/27 schedule</a></li>
+          <li><a href="https://www.cnnturk.com/spor/futbol/ziraat-turkiye-kupasinda-yeni-sezonun-takvimi-belli-oldu-3450583" target="_blank" rel="noopener">CNN Türk: Ziraat Turkish Cup 2026/27 calendar</a></li>
+          <li><a href="https://www.milligazete.com.tr/2026-super-kupa-maclari-ne-zaman-hangi-takimlar-katilacak-yari-finaller-hangi-gun-final-ne-zaman" target="_blank" rel="noopener">Milli Gazete: Super Cup dates</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/2026%E2%80%9327_Galatasaray_S.K._season" target="_blank" rel="noopener">Wikipedia: 2026–27 Galatasaray S.K. season</a></li>
+          <li><a href="https://tr.wikipedia.org/wiki/%C5%9Eablon:2026-27_S%C3%BCper_Lig_puan_durumu" target="_blank" rel="noopener">Vikipedi: 2026–27 Süper Lig table</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Photo credits (Wikimedia Commons)</h3>
+        <ul>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Galatasaray_S.K._Logo_2026.png" target="_blank" rel="noopener">Galatasaray crest</a>, Isaozler, CC0</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Ali_Sami_Yen_Spor_Kompleksi_Nef_Stadyumu_%E2%80%93_D%C4%B1%C5%9F_manzara.png" target="_blank" rel="noopener">RAMS Park aerial</a>, beIN SPORTS Türkiye, CC BY 3.0</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Galatasaray-fans.jpg" target="_blank" rel="noopener">Fans celebrating</a>, Frankie Fouganthin, CC BY 4.0</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:PSG-Galatasaray_UCL_02.jpg" target="_blank" rel="noopener">PSG v Galatasaray</a>, Zakarie Faibis, CC BY-SA 4.0</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:GS_1-0_GOF_T%C3%BCrkcell_S%C3%BCperlig_10052008.jpg" target="_blank" rel="noopener">Ali Sami Yen tifo</a>, Qwl, public domain</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Ali_Sami_Yen_Spor_Kompleksi_T%C3%BCrk_Telekom_Arena5.jpg" target="_blank" rel="noopener">Stadium opening night</a>, Qwl, CC0</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Florya_Metin_Oktay.jpg" target="_blank" rel="noopener">Florya Metin Oktay</a>, heineken14, CC BY 2.0</li>
+        </ul>
+      </div>
+    </div>
+    <div class="disc">
+      <span>Galatasaray Physio &amp; Performance Department: Kareem, Batuhan, Nicolas, Ali.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* ---------- league table (after Week 7, 12 Oct 2026) ---------- */
+  var TABLE=[
+    ["Galatasaray",7,5,1,1,5,16],["Beşiktaş",7,5,0,2,8,15],["Amedspor",7,4,2,1,8,14],["Fenerbahçe",7,4,1,2,13,13],
+    ["Trabzonspor",7,4,1,2,11,13],["Alanyaspor",7,3,3,1,2,12],["Kocaelispor",7,4,0,3,2,12],["Çorum FK",7,3,1,3,4,10],
+    ["Kasımpaşa",7,2,4,1,0,10],["Çaykur Rizespor",7,3,1,3,-2,10],["İstanbul Başakşehir",7,2,2,3,-1,8],["Gaziantep FK",7,2,2,3,-3,8],
+    ["Gençlerbirliği",7,2,2,3,-8,8],["Erzurumspor",7,2,2,3,-8,8],["Göztepe",7,1,3,3,0,6],["Konyaspor",7,1,2,4,-4,5],
+    ["Samsunspor",7,1,1,5,-9,4],["Eyüpspor",7,1,0,6,-18,3]
+  ];
+  var tb=document.getElementById("standings"),h="";
+  TABLE.forEach(function(r,i){
+    var cls=r[0]==="Galatasaray"?"gs":(i>=15?"releg":"");
+    var gd=r[5]>0?"+"+r[5]:(r[5]<0?"−"+Math.abs(r[5]):"0");
+    h+='<tr class="'+cls+'"><td>'+(i+1)+'</td><td>'+r[0]+'</td><td>'+r[1]+'</td><td>'+r[2]+'</td><td>'+r[3]+'</td><td>'+r[4]+'</td><td>'+gd+'</td><td>'+r[6]+'</td></tr>';
+  });
+  tb.innerHTML=h;
+
+  /* ---------- timeline ---------- */
+  var START=Date.UTC(2026,6,1), END=Date.UTC(2027,6,1), DAY=864e5;
+  function t(s){var p=s.split("-");return Date.UTC(+p[0],+p[1]-1,+p[2]);}
+  function x(s){return (t(s)-START)/(END-START)*100;}
+  function w(a,b){return ((t(b)+DAY)-t(a))/(END-START)*100;}
+  function el(tag,cls,style,text,title){var e=document.createElement(tag);if(cls)e.className=cls;if(style)e.setAttribute("style",style);if(text)e.textContent=text;if(title){e.title=title;e.setAttribute("aria-label",title);}return e;}
+
+  var plot=document.getElementById("plot");
+  var MN=["Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun"];
+  var rm=document.getElementById("r-months");
+  for(var i=0;i<12;i++){
+    var y=i<6?2026:2027, m=(6+i)%12;
+    var a=Date.UTC(y,m,1), b=Date.UTC(m===11?y+1:y,(m+1)%12,1);
+    var left=(a-START)/(END-START)*100, width=(b-a)/(END-START)*100;
+    var mon=el("div","mon","left:"+left+"%;width:"+width+"%");
+    mon.textContent=MN[i];
+    if(i===0||i===6){var sm=document.createElement("small");sm.textContent=String(y);mon.appendChild(sm);}
+    rm.appendChild(mon);
+    if(i>0)plot.appendChild(el("i","grid-line","left:"+left+"%"));
+  }
+
+  var PH=[
+    ["2026-07-07","2026-08-13","prep","Pre-season","Preparatory: general & specific prep"],
+    ["2026-08-14","2026-10-31","comp","Early season","Competitive: early season"],
+    ["2026-11-01","2026-12-19","comp","Winter congestion","Competitive: winter congestion"],
+    ["2026-12-20","2027-01-03","prep","Reload","Preparatory: mini-break & reload"],
+    ["2027-01-04","2027-04-30","comp","Championship push","Competitive: championship push"],
+    ["2027-05-01","2027-06-05","peak","Taper & finals","Competitive peak: tapering & finals"],
+    ["2027-06-06","2027-06-30","trans","Transition","Transition: off-season"]
+  ];
+  var rp=document.getElementById("r-phase");
+  PH.forEach(function(p){rp.appendChild(el("div","ph "+p[2],"left:calc("+x(p[0])+"% + 1px);width:calc("+w(p[0],p[1])+"% - 2px)",p[3],p[4]+" ("+p[0]+" to "+p[1]+")"));});
+
+  function lbl(row,pos,text,up,muted){row.appendChild(el("span","lbl "+(up?"up":"dn")+(muted?" muted":""),"left:"+pos+"%",text));}
+
+  /* Süper Lig */
+  var rl=document.getElementById("r-league");
+  [["2026-08-14","2026-12-19","Weeks 1–16"],["2027-01-15","2027-05-23","Weeks 17–34"]].forEach(function(r){
+    rl.appendChild(el("div","rg","left:"+x(r[0])+"%;width:"+w(r[0],r[1])+"%",null,"Süper Lig "+r[2]+": "+r[0]+" to "+r[1]));
+  });
+  lbl(rl,x("2026-08-14"),"Opener 14 Aug",false,true);
+  lbl(rl,x("2027-05-23"),"Final round 23 May",false,true);
+  [["2026-10-26","v Fenerbahçe"],["2026-11-30","at Beşiktaş"]].forEach(function(d){
+    rl.appendChild(el("i","dia","left:"+x(d[0])+"%",null,"Derby "+d[1]+", "+d[0]));
+    lbl(rl,x(d[0]),d[1],true);
+  });
+
+  /* Champions League */
+  var ru=document.getElementById("r-ucl");
+  var UCL=[["2026-09-09","SCP","Sporting CP","A"],["2026-10-13","BAR","Barcelona","H"],["2026-10-21","LIL","Lille","A"],["2026-11-03","STU","VfB Stuttgart","H"],
+           ["2026-11-24","AVL","Aston Villa","H"],["2026-12-08","AEK","AEK Athens","A"],["2027-01-19","FEY","Feyenoord","H"],["2027-01-27","PSG","Paris Saint-Germain","A"]];
+  UCL.forEach(function(u,i){
+    ru.appendChild(el("i","ev "+(u[3]==="H"?"home":"away"),"left:"+x(u[0])+"%",null,"Champions League matchday "+(i+1)+": "+(u[3]==="H"?"v ":"at ")+u[2]+", "+u[0]));
+    lbl(ru,x(u[0]),u[1],i%2===0);
+  });
+  [["2027-02-16","2027-02-24","Play-off"],["2027-03-09","2027-03-17","Last 16"],["2027-04-06","2027-04-14","QF"],["2027-04-27","2027-05-05","SF"],["2027-06-05","2027-06-05","Final"]].forEach(function(k,i){
+    ru.appendChild(el("div","win","left:"+x(k[0])+"%;width:"+w(k[0],k[1])+"%",null,"Champions League "+k[2]+" window, "+k[0]+" to "+k[1]+", if qualified"));
+    lbl(ru,x(k[0])+w(k[0],k[1])/2,k[2],i%2===1,true);
+  });
+
+  /* Turkish Cup */
+  var rc=document.getElementById("r-cup");
+  [["2026-12-15","2026-12-24","R5",true],["2027-01-12","2027-01-14","R16"],["2027-02-02","2027-02-04","QF"],["2027-03-02","2027-03-04","SF 1"],["2027-04-20","2027-04-22","SF 2"],["2027-05-29","2027-05-29","Final"]].forEach(function(c,i){
+    rc.appendChild(el("div","win"+(c[3]?" solid":""),"left:"+x(c[0])+"%;width:"+w(c[0],c[1])+"%",null,"Turkish Cup "+c[2]+", "+c[0]+(c[0]!==c[1]?" to "+c[1]:"")+(c[3]?"":", if qualified")));
+    lbl(rc,x(c[0])+w(c[0],c[1])/2,c[2],false,!c[3]);
+  });
+
+  /* Super Cup */
+  var rs=document.getElementById("r-sc");
+  rs.appendChild(el("div","win solid","left:"+x("2027-01-04")+"%;width:"+w("2027-01-04","2027-01-05")+"%",null,"Super Cup semi-final v Konyaspor, 4 or 5 Jan 2027"));
+  lbl(rs,x("2027-01-04")+w("2027-01-04","2027-01-05")/2,"SF v Konyaspor",true);
+  rs.appendChild(el("div","win","left:"+x("2027-01-09")+"%;width:"+w("2027-01-09","2027-01-09")+"%",null,"Super Cup final, 9 Jan 2027, if qualified"));
+  lbl(rs,x("2027-01-09")+w("2027-01-09","2027-01-09")/2,"Final 9 Jan",false,true);
+
+  /* ---------- full fixture list ---------- */
+  var LG=[["2026-08-14","Çorum FK","H"],["2026-08-21","Erzurumspor","A"],["2026-08-29","Göztepe","H"],["2026-09-04","İstanbul Başakşehir","A"],
+          ["2026-09-13","Kocaelispor","H"],["2026-09-19","Trabzonspor","A"],["2026-10-09","Kasımpaşa","H"],["2026-10-17","Gençlerbirliği","A"],
+          ["2026-10-26","Fenerbahçe","H"],["2026-10-30","Konyaspor","A"],["2026-11-07","Amedspor","H"],["2026-11-21","Samsunspor","H"],
+          ["2026-11-30","Beşiktaş","A"],["2026-12-04","Çaykur Rizespor","H"],["2026-12-12","Eyüpspor","A"],["2026-12-19","Alanyaspor","H"]];
+  var rows=[];
+  LG.forEach(function(g,i){rows.push([g[0],null,"lg","Süper Lig","Week "+(i+1)+": "+(g[2]==="H"?"Galatasaray v "+g[1]:g[1]+" v Galatasaray"),g[2]]);});
+  rows.push(["2027-05-23",null,"lg","Süper Lig","Week 34: Galatasaray v Gaziantep FK","H"]);
+  UCL.forEach(function(u,i){rows.push([u[0],null,"ucl","Champions League","Matchday "+(i+1)+": "+(u[3]==="H"?"Galatasaray v "+u[2]:u[2]+" v Galatasaray"),u[3]]);});
+  rows.push(["2026-12-15","15–24 Dec","cup","Turkish Cup","Round 5, opponent to be drawn","TBC"]);
+  rows.push(["2027-01-04","4 or 5 Jan","sc","Super Cup","Semi-final: Galatasaray v Konyaspor","N"]);
+  rows.push(["2027-01-09",null,"sc","Super Cup","Final (if we win the semi-final)","N"]);
+  rows.push(["2027-05-29",null,"cup","Turkish Cup","Final (if we qualify)","N"]);
+  rows.push(["2027-06-05",null,"ucl","Champions League","Final, Madrid (if we qualify)","N"]);
+  rows.sort(function(a,b){return t(a[0])-t(b[0]);});
+  var V={H:"Home · RAMS Park",A:"Away",N:"Neutral",TBC:"To be confirmed"};
+  var fx=document.getElementById("fx"),out="",lastM="";
+  rows.forEach(function(r){
+    var d=new Date(t(r[0]));
+    var mk=d.toLocaleDateString("en-GB",{month:"long",year:"numeric",timeZone:"UTC"});
+    if(mk!==lastM){out+='<tr class="month"><td colspan="4">'+mk+'</td></tr>';lastM=mk;}
+    var ds=r[1]||d.toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short",timeZone:"UTC"});
+    out+='<tr><td class="tab">'+ds+'</td><td><span class="comp '+r[2]+'">'+r[3]+'</span></td><td>'+r[4]+'</td><td>'+V[r[5]]+'</td></tr>';
+  });
+  fx.innerHTML=out;
+
+  /* ---------- macrocycle load wave ---------- */
+  var VOL=[90,70,55,75,60,35,15], INT=[50,80,70,55,90,85,15];
+  var svg=document.getElementById("wave");
+  function curve(p){var d="M"+p[0][0].toFixed(1)+","+p[0][1].toFixed(1);for(var i=0;i<p.length-1;i++){var p0=p[i-1]||p[i],p1=p[i],p2=p[i+1],p3=p[i+2]||p2;
+    d+=" C"+(p1[0]+(p2[0]-p0[0])/6).toFixed(1)+","+(p1[1]+(p2[1]-p0[1])/6).toFixed(1)+" "+(p2[0]-(p3[0]-p1[0])/6).toFixed(1)+","+(p2[1]-(p3[1]-p1[1])/6).toFixed(1)+" "+p2[0].toFixed(1)+","+p2[1].toFixed(1);}return d;}
+  function drawWave(){
+    var W=Math.round(svg.getBoundingClientRect().width)||900,H=140,P=16,n=7;
+    svg.setAttribute("viewBox","0 0 "+W+" "+H);
+    function yy(v){return H-P-(v/100)*(H-2*P);}
+    function pts(a){var r=[[0,yy(a[0])]];a.forEach(function(v,i){r.push([(i+.5)/n*W,yy(v)]);});r.push([W,yy(a[n-1])]);return r;}
+    var g="",i;
+    [25,50,75].forEach(function(v){g+='<line class="w-grid" x1="0" x2="'+W+'" y1="'+yy(v)+'" y2="'+yy(v)+'"/>';});
+    for(i=1;i<n;i++){var cx=(i/n*W).toFixed(1);g+='<line class="w-col" x1="'+cx+'" x2="'+cx+'" y1="0" y2="'+H+'"/>';}
+    var pv=pts(VOL),pi=pts(INT);
+    g+='<path class="w-area" d="'+curve(pv)+' L'+W+','+H+' L0,'+H+' Z"/>';
+    g+='<path class="w-vol" pathLength="1" d="'+curve(pv)+'"/><path class="w-int" pathLength="1" d="'+curve(pi)+'"/>';
+    for(i=0;i<n;i++){var px=((i+.5)/n*W).toFixed(1);g+='<circle class="w-dv" cx="'+px+'" cy="'+yy(VOL[i]).toFixed(1)+'" r="4.5"/><circle class="w-di" cx="'+px+'" cy="'+yy(INT[i]).toFixed(1)+'" r="4.5"/>';}
+    svg.innerHTML=g;
+  }
+  drawWave();
+  if(window.ResizeObserver){new ResizeObserver(drawWave).observe(svg);}else{window.addEventListener("resize",drawWave);}
+
+  /* ---------- smooth motion: reveal targets + active nav ---------- */
+  var RV=".sec-head,.org>.person,.reports>.person,.cal>li,.goals>li,.standings,.season-fig,.legend,.tl,details.fixtures,.cal-head figure,.meso-grid>*,.comps>.comp-card,.taper,.justify,.micro-head figure,.week>.wd,.foot-grid>div,.pchart-wrap,.macro-fig,.note,.picks";
+  document.querySelectorAll(RV).forEach(function(e){
+    var sib=e.parentNode?Array.prototype.indexOf.call(e.parentNode.children,e):0;
+    if(e.matches(".reports>.person,.cal>li,.goals>li,.comps>.comp-card,.week>.wd"))e.style.setProperty("--i",Math.min(sib,6));
+    e.classList.add("rv");
+  });
+  var links=Array.prototype.slice.call(document.querySelectorAll(".nav a")),byId={};
+  links.forEach(function(a){byId[a.getAttribute("href").slice(1)]=a;});
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(en){
+        if(!en.isIntersecting)return;
+        links.forEach(function(l){l.removeAttribute("aria-current");});
+        var a=byId[en.target.id];
+        if(a){a.setAttribute("aria-current","location");var nav=a.parentNode;if(nav.scrollWidth>nav.clientWidth)nav.scrollTo({left:a.offsetLeft-24,behavior:"smooth"});}
+      });
+    },{rootMargin:"-45% 0px -50% 0px"});
+    document.querySelectorAll("main section[id]").forEach(function(s){io.observe(s);});
+  }
+})();
+</script>
+
+</body>
+</html>
