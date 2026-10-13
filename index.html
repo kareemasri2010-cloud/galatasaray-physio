@@ -466,6 +466,19 @@ details.fixtures[open]::details-content{block-size:auto}
 .wd-head .md-tag{grid-column:1/-1;justify-self:start}
 @media (max-width:1000px){.wd-head{grid-template-columns:minmax(0,1fr)}}
 
+/* league games inside the cycles */
+.pchart tr.r-league td{background:var(--surface);text-align:left;vertical-align:top;padding:10px 8px;text-transform:none;font-family:var(--body);font-weight:500;letter-spacing:0;color:var(--muted)}
+.lg-list{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.lg-list li{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:6px;align-items:baseline;font-size:12.5px;line-height:1.25}
+.lg-list b{font-family:var(--label);font-weight:700;color:var(--gold);font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.lg-list span{color:var(--ink);min-width:0;overflow-wrap:anywhere}
+.lg-list i{font-style:normal;font-family:var(--label);font-weight:700;font-size:11px;padding:0 5px;border-radius:3px;border:1px solid var(--rule);color:var(--muted)}
+.lg-list i.h{background:var(--gold);border-color:var(--gold);color:var(--ground)}
+.lg-none{font-size:13px;color:var(--faint)}
+.lg-note{display:block;margin-top:8px;font-size:11.5px;line-height:1.3;color:var(--faint)}
+.block-fx .lg{font-family:var(--label);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ground);background:var(--red-hi);padding:1px 6px;border-radius:3px;margin-right:6px}
+.block-fx .ucl,.block-fx .cup{font-family:var(--label);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:1px 6px;border-radius:3px;margin-right:6px;background:var(--surface-2);color:var(--ink);border:1px solid var(--rule)}
+
 /* footer */
 footer{border-top:1px solid var(--rule);padding-block:48px 64px;background:var(--surface)}
 .foot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}
@@ -719,6 +732,7 @@ footer .disc{margin-top:36px;padding-top:20px;border-top:1px solid var(--rule);f
           <tr><th scope="row">Strength</th><td class="d">Develop</td><td class="m">Maintain</td><td class="m">Maintain</td><td class="d">Develop</td><td class="m">Maintain</td><td class="h sel">Hold</td><td class="h">Hold</td></tr>
           <tr><th scope="row">Skills</th><td class="m">Maintain</td><td class="d">Develop</td><td class="m">Maintain</td><td class="d">Develop</td><td class="d">Develop</td><td class="d sel">Develop</td><td class="h">Hold</td></tr>
           <tr class="r-num"><th scope="row">Matches<small>Competitive</small></th><td>5<small>friendlies</small></td><td>13</td><td>9–10</td><td>0–1</td><td>≈17–29</td><td class="sel">≈4–7</td><td>0</td></tr>
+          <tr class="r-league"><th scope="row">League games<small>Süper Lig</small></th><td><span class="lg-none">None. Friendlies only</span></td><td><ul class="lg-list"><li><b>14 Aug</b><span>Çorum FK</span><i class="h">H</i></li><li><b>21 Aug</b><span>Erzurumspor</span><i class="a">A</i></li><li><b>29 Aug</b><span>Göztepe</span><i class="h">H</i></li><li><b>4 Sep</b><span>Başakşehir</span><i class="a">A</i></li><li><b>13 Sep</b><span>Kocaelispor</span><i class="h">H</i></li><li><b>19 Sep</b><span>Trabzonspor</span><i class="a">A</i></li><li><b>9 Oct</b><span>Kasımpaşa</span><i class="h">H</i></li><li><b>17 Oct</b><span>Gençlerbirliği</span><i class="a">A</i></li><li><b>26 Oct</b><span>Fenerbahçe</span><i class="h">H</i></li><li><b>30 Oct</b><span>Konyaspor</span><i class="a">A</i></li></ul><span class="lg-note">Weeks 1–10</span></td><td><ul class="lg-list"><li><b>7 Nov</b><span>Amedspor</span><i class="h">H</i></li><li><b>21 Nov</b><span>Samsunspor</span><i class="h">H</i></li><li><b>30 Nov</b><span>Beşiktaş</span><i class="a">A</i></li><li><b>4 Dec</b><span>Rizespor</span><i class="h">H</i></li><li><b>12 Dec</b><span>Eyüpspor</span><i class="a">A</i></li><li><b>19 Dec</b><span>Alanyaspor</span><i class="h">H</i></li></ul><span class="lg-note">Weeks 11–16</span></td><td><span class="lg-none">None. Winter break</span></td><td><ul class="lg-list"><li><b>Wk 17</b><span>Gaziantep</span><i class="a">A</i></li><li><b>Wk 18</b><span>Çorum FK</span><i class="a">A</i></li><li><b>Wk 19</b><span>Erzurumspor</span><i class="h">H</i></li><li><b>Wk 20</b><span>Göztepe</span><i class="a">A</i></li><li><b>Wk 21</b><span>Başakşehir</span><i class="h">H</i></li><li><b>Wk 22</b><span>Kocaelispor</span><i class="a">A</i></li><li><b>Wk 23</b><span>Trabzonspor</span><i class="h">H</i></li><li><b>Wk 24</b><span>Kasımpaşa</span><i class="a">A</i></li><li><b>Wk 25</b><span>Gençlerbirliği</span><i class="h">H</i></li><li><b>Wk 26</b><span>Fenerbahçe</span><i class="a">A</i></li><li><b>Wk 27</b><span>Konyaspor</span><i class="h">H</i></li><li><b>Wk 28</b><span>Amedspor</span><i class="a">A</i></li><li><b>Wk 29</b><span>Samsunspor</span><i class="a">A</i></li><li><b>Wk 30</b><span>Beşiktaş</span><i class="h">H</i></li></ul><span class="lg-note">Week 17 is 15–18 Jan; later dates set by the TFF</span></td><td class="sel"><ul class="lg-list"><li><b>Wk 31</b><span>Rizespor</span><i class="a">A</i></li><li><b>Wk 32</b><span>Eyüpspor</span><i class="h">H</i></li><li><b>Wk 33</b><span>Alanyaspor</span><i class="a">A</i></li><li><b>23 May</b><span>Gaziantep</span><i class="h">H</i></li></ul><span class="lg-note">Weeks 31–34, final round 23 May</span></td><td><span class="lg-none">None</span></td></tr>
           <tr class="r-text"><th scope="row">Focus</th><td>Aerobic base, strength, tactical introduction</td><td>Speed, team cohesion, two games a week</td><td>Keep fitness, active recovery</td><td>Short general prep, skill refinement</td><td>High-intensity tactics, keep peak fitness</td><td class="sel">Cut load, stay sharp for the finals</td><td>Active rest</td></tr>
           <tr class="r-text"><th scope="row">Big games</th><td>Friendlies: Monza, Venezia, Rennes, Villarreal</td><td>Barcelona (UCL), Fenerbahçe derby 26 Oct</td><td>Aston Villa (UCL), Beşiktaş derby 30 Nov</td><td>League winter break</td><td>Super Cup, PSG (UCL), UCL knockouts</td><td class="sel">League ends 23 May, Cup final 29 May</td><td>No matches</td></tr>
         </tbody>
@@ -753,11 +767,15 @@ footer .disc{margin-top:36px;padding-top:20px;border-top:1px solid var(--rule);f
       <div>
         <p class="intro">May decides the season. We reduce training load step by step so players arrive at the last league games and the finals fresh, while keeping them sharp.</p>
         <ul class="block-fx">
-          <li><span class="d tab">4/5 May</span><span>Champions League semi-final, second leg<span class="if">if we qualify</span></span></li>
-          <li><span class="d tab">23 May</span><span>Süper Lig final round, home to Gaziantep FK</span></li>
-          <li><span class="d tab">29 May</span><span>Ziraat Turkish Cup final<span class="if">if we qualify</span></span></li>
-          <li><span class="d tab">5 Jun</span><span>Champions League final, Madrid<span class="if">if we qualify</span></span></li>
+          <li><span class="d tab">≈2 May</span><span><span class="lg">League</span>Week 31 at Çaykur Rizespor</span></li>
+          <li><span class="d tab">4/5 May</span><span><span class="ucl">UCL</span>Semi-final, second leg<span class="if">if we qualify</span></span></li>
+          <li><span class="d tab">≈9 May</span><span><span class="lg">League</span>Week 32 v Eyüpspor</span></li>
+          <li><span class="d tab">≈16 May</span><span><span class="lg">League</span>Week 33 at Alanyaspor</span></li>
+          <li><span class="d tab">23 May</span><span><span class="lg">League</span>Week 34 v Gaziantep FK, final round</span></li>
+          <li><span class="d tab">29 May</span><span><span class="cup">Cup</span>Ziraat Turkish Cup final<span class="if">if we qualify</span></span></li>
+          <li><span class="d tab">5 Jun</span><span><span class="ucl">UCL</span>Final, Madrid<span class="if">if we qualify</span></span></li>
         </ul>
+        <p class="note">≈ estimated date. The TFF sets exact dates for Weeks 31–33 later in the season.</p>
       </div>
       <figure>
         <img src="img/fireworks.jpg" alt="Fireworks and light beams over the pitch inside the stadium">
@@ -797,9 +815,9 @@ footer .disc{margin-top:36px;padding-top:20px;border-top:1px solid var(--rule);f
     <div class="taper">
       <h3>Week by week: how the load drops</h3>
       <ol class="taper-list">
-        <li><span class="tw">Week 1</span><span class="tdt tab">1–9 May</span><span class="tbar" aria-hidden="true"><i style="width:90%"></i></span><span class="tp tab">90%</span><span class="tm">League round · UCL semi-final, 2nd leg*</span></li>
-        <li><span class="tw">Week 2</span><span class="tdt tab">10–16 May</span><span class="tbar" aria-hidden="true"><i style="width:80%"></i></span><span class="tp tab">80%</span><span class="tm">League round</span></li>
-        <li class="now"><span class="tw">Week 3</span><span class="tdt tab">17–23 May</span><span class="tbar" aria-hidden="true"><i style="width:70%"></i></span><span class="tp tab">70%</span><span class="tm">League final round, Sun 23 May · <a href="#microcycle">see the week plan</a></span></li>
+        <li><span class="tw">Week 1</span><span class="tdt tab">1–9 May</span><span class="tbar" aria-hidden="true"><i style="width:90%"></i></span><span class="tp tab">90%</span><span class="tm">League: at Rizespor (wk 31), v Eyüpspor (wk 32) · UCL semi-final, 2nd leg*</span></li>
+        <li><span class="tw">Week 2</span><span class="tdt tab">10–16 May</span><span class="tbar" aria-hidden="true"><i style="width:80%"></i></span><span class="tp tab">80%</span><span class="tm">League: at Alanyaspor (wk 33)</span></li>
+        <li class="now"><span class="tw">Week 3</span><span class="tdt tab">17–23 May</span><span class="tbar" aria-hidden="true"><i style="width:70%"></i></span><span class="tp tab">70%</span><span class="tm">League: v Gaziantep FK (wk 34), Sun 23 May · <a href="#microcycle">see the week plan</a></span></li>
         <li><span class="tw">Week 4</span><span class="tdt tab">24–30 May</span><span class="tbar" aria-hidden="true"><i style="width:60%"></i></span><span class="tp tab">60%</span><span class="tm">Turkish Cup final, Sat 29 May*</span></li>
         <li><span class="tw">Week 5</span><span class="tdt tab">31 May – 5 Jun</span><span class="tbar" aria-hidden="true"><i style="width:50%"></i></span><span class="tp tab">50%</span><span class="tm">Champions League final, Sat 5 Jun*</span></li>
       </ol>
@@ -822,7 +840,7 @@ footer .disc{margin-top:36px;padding-top:20px;border-top:1px solid var(--rule);f
           <li class="span tab">17–23 May 2027 · 7 days</li>
         </ol>
         <h2>Microcycle week plan</h2>
-        <p class="intro">One week from the taper block, building up to the last Süper Lig round on Sunday 23 May. MD means matchday; MD+1 is the day after the previous game and MD−4 is four days before the next one.</p>
+        <p class="intro">One week from the taper block. It starts the day after the Week 33 away game at Alanyaspor and builds up to the last Süper Lig round, at home to Gaziantep FK on Sunday 23 May. MD means matchday; MD+1 is the day after the previous game and MD−4 is four days before the next one.</p>
         <p class="lead-tag"><span class="ini">B</span>Lead: <b>Batuhan</b> &amp; <span class="ini">A</span><b>Ali</b></p>
         <div class="picks">
           <div class="pick main"><span class="pk-l">Week we picked</span><span class="pk-v">17–23 May</span></div>
@@ -837,13 +855,13 @@ footer .disc{margin-top:36px;padding-top:20px;border-top:1px solid var(--rule);f
     </div>
 
     <ol class="week">
-      <li class="wd"><div class="wd-head"><span class="dn">Mon</span><span class="dd">17 May</span><span class="md-tag">MD+1</span></div><div class="wd-bar" aria-hidden="true"><i style="height:20%"></i></div><p class="wd-load">Low</p><p class="wd-s">Recovery</p><p class="wd-d">Light cycling, stretching and physio for the starters. Subs play small-sided games to keep fit.</p></li>
+      <li class="wd"><div class="wd-head"><span class="dn">Mon</span><span class="dd">17 May</span><span class="md-tag">MD+1</span></div><div class="wd-bar" aria-hidden="true"><i style="height:20%"></i></div><p class="wd-load">Low</p><p class="wd-s">Recovery</p><p class="wd-d">Day after the Week 33 away game at Alanyaspor. Light cycling, stretching and physio for the starters; subs play small-sided games.</p></li>
       <li class="wd off"><div class="wd-head"><span class="dn">Tue</span><span class="dd">18 May</span><span class="md-tag">MD+2</span></div><div class="wd-bar" aria-hidden="true"></div><p class="wd-load">Off</p><p class="wd-s">Rest</p><p class="wd-d">Full day off for body and mind, to prevent overtraining.</p></li>
       <li class="wd"><div class="wd-head"><span class="dn">Wed</span><span class="dd">19 May</span><span class="md-tag">MD−4</span></div><div class="wd-bar" aria-hidden="true"><i style="height:80%"></i></div><p class="wd-load">High</p><p class="wd-s">Strength &amp; conditioning</p><p class="wd-d">High-intensity interval runs, resistance training and possession drills in tight spaces.</p></li>
       <li class="wd"><div class="wd-head"><span class="dn">Thu</span><span class="dd">20 May</span><span class="md-tag">MD−3</span></div><div class="wd-bar" aria-hidden="true"><i style="height:60%"></i></div><p class="wd-load">Medium</p><p class="wd-s">Tactical development</p><p class="wd-d">11v11 phase of play on defensive shape and attacking transitions.</p></li>
       <li class="wd"><div class="wd-head"><span class="dn">Fri</span><span class="dd">21 May</span><span class="md-tag">MD−2</span></div><div class="wd-bar" aria-hidden="true"><i style="height:40%"></i></div><p class="wd-load">Low–Medium</p><p class="wd-s">Speed &amp; skills</p><p class="wd-d">Short sprint reps, agility ladder work and finishing drills.</p></li>
       <li class="wd"><div class="wd-head"><span class="dn">Sat</span><span class="dd">22 May</span><span class="md-tag">MD−1</span></div><div class="wd-bar" aria-hidden="true"><i style="height:20%"></i></div><p class="wd-load">Low</p><p class="wd-s">Activation &amp; strategy</p><p class="wd-d">Set-piece walkthrough (corners, free kicks), reaction games and light dynamic stretching.</p></li>
-      <li class="wd match"><div class="wd-head"><span class="dn">Sun</span><span class="dd">23 May</span><span class="md-tag">MD</span></div><div class="wd-bar" aria-hidden="true"><i style="height:100%"></i></div><p class="wd-load">Maximum</p><p class="wd-s">Matchday</p><p class="wd-d">Süper Lig final round: Galatasaray v Gaziantep FK at RAMS Park.</p></li>
+      <li class="wd match"><div class="wd-head"><span class="dn">Sun</span><span class="dd">23 May</span><span class="md-tag">MD</span></div><div class="wd-bar" aria-hidden="true"><i style="height:100%"></i></div><p class="wd-load">Maximum</p><p class="wd-s">Matchday</p><p class="wd-d">Süper Lig Week 34, the final round: Galatasaray v Gaziantep FK at RAMS Park.</p></li>
     </ol>
   </div>
 </section>
