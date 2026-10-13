@@ -479,6 +479,12 @@ details.fixtures[open]::details-content{block-size:auto}
 .block-fx .lg{font-family:var(--label);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ground);background:var(--red-hi);padding:1px 6px;border-radius:3px;margin-right:6px}
 .block-fx .ucl,.block-fx .cup{font-family:var(--label);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:1px 6px;border-radius:3px;margin-right:6px;background:var(--surface-2);color:var(--ink);border:1px solid var(--rule)}
 
+.lg-list{gap:8px}
+.lg-list li{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"n ha" "d d";gap:1px 6px;line-height:1.15}
+.lg-list span{grid-area:n;overflow-wrap:normal;font-weight:600;font-size:13px}
+.lg-list b{grid-area:d;font-size:11.5px}
+.lg-list i{grid-area:ha;align-self:start}
+
 /* footer */
 footer{border-top:1px solid var(--rule);padding-block:48px 64px;background:var(--surface)}
 .foot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}
