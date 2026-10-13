@@ -428,7 +428,7 @@ details.fixtures[open]::details-content{block-size:auto}
     .week{view-timeline-name:--week}
     .wd-bar i{transform-origin:50% 100%;animation:grow-y linear both;animation-timeline:--week;animation-range:entry 20% cover 48%}
     .pchart-wrap{view-timeline-name:--macro}
-    .pchart tbody td{animation:cell-in linear both;animation-timeline:--macro;animation-range:entry 5% cover 35%}
+    .pchart tbody tr:not(.r-wave) td{animation:cell-in linear both;animation-timeline:--macro;animation-range:entry 5% cover 35%}
     .w-vol,.w-int{stroke-dasharray:1;animation:draw linear both;animation-timeline:--macro;animation-range:entry 25% cover 55%}
     .w-area,.w-dv,.w-di{animation:fade-in linear both;animation-timeline:--macro;animation-range:entry 45% cover 60%}
     .tl{view-timeline-name:--tl}
@@ -461,6 +461,10 @@ details.fixtures[open]::details-content{block-size:auto}
 .pk-v small{font-size:.5em;color:var(--muted);font-weight:700;letter-spacing:.04em}
 
 .flag{display:inline-block;width:32px;height:21px;margin-left:8px;vertical-align:-1px;border-radius:2px;box-shadow:0 0 0 1px color-mix(in srgb,var(--ink) 18%,transparent)}
+
+.wd-head{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;gap:4px 8px}
+.wd-head .md-tag{grid-column:1/-1;justify-self:start}
+@media (max-width:1000px){.wd-head{grid-template-columns:minmax(0,1fr)}}
 
 /* footer */
 footer{border-top:1px solid var(--rule);padding-block:48px 64px;background:var(--surface)}
@@ -1004,7 +1008,7 @@ footer .disc{margin-top:36px;padding-top:20px;border-top:1px solid var(--rule);f
   function curve(p){var d="M"+p[0][0].toFixed(1)+","+p[0][1].toFixed(1);for(var i=0;i<p.length-1;i++){var p0=p[i-1]||p[i],p1=p[i],p2=p[i+1],p3=p[i+2]||p2;
     d+=" C"+(p1[0]+(p2[0]-p0[0])/6).toFixed(1)+","+(p1[1]+(p2[1]-p0[1])/6).toFixed(1)+" "+(p2[0]-(p3[0]-p1[0])/6).toFixed(1)+","+(p2[1]-(p3[1]-p1[1])/6).toFixed(1)+" "+p2[0].toFixed(1)+","+p2[1].toFixed(1);}return d;}
   function drawWave(){
-    var W=Math.round(svg.getBoundingClientRect().width)||900,H=140,P=16,n=7;
+    var W=Math.round(svg.parentNode.clientWidth)||900,H=140,P=16,n=7;
     svg.setAttribute("viewBox","0 0 "+W+" "+H);
     function yy(v){return H-P-(v/100)*(H-2*P);}
     function pts(a){var r=[[0,yy(a[0])]];a.forEach(function(v,i){r.push([(i+.5)/n*W,yy(v)]);});r.push([W,yy(a[n-1])]);return r;}
